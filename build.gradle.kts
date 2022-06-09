@@ -17,10 +17,19 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.6.7")
+
+    //DB
+    implementation("mysql:mysql-connector-java:8.0.28")
+    testImplementation("com.h2database:h2:2.1.210")
+
+
+
 }
 
 tasks.withType<KotlinCompile> {
