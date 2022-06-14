@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 import java.time.LocalDateTime
 
 @Service
-class TodoRepositoryImpl(private val todoDataBase: TodoDataBase) : TodoRepository {
+class TodoRepositoryImpl( val todoDataBase: TodoDataBase) : TodoRepository {
 
     override fun save(todo: Todo): Todo? {
 
